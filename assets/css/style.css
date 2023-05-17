@@ -1,0 +1,185 @@
+/* navbar start */
+/* font-family: 'Merienda', cursive;
+font-family: 'Poppins', sans-serif; */
+:root {
+    --brand-color : #396C03;
+}
+body {
+    overflow-x: hidden;
+}
+header {
+    background: #F0F4EC;
+}
+a.navbar-brand {
+    color: var(--brand-color);
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+}
+a.navbar-brand span {
+    color: var(--brand-color);
+    font-family: 'Merienda', cursive;
+    font-size: 28px;
+    font-weight: 700;
+}
+.navbar-brand:focus, .navbar-brand:hover {
+    color: var(--brand-color);
+}
+sup {
+    top: -0.75em;
+    left: 0px;
+}
+.navbar-nav .nav-link.active, 
+.navbar-nav .nav-link.show {
+    color: #3F3F3F;
+  }
+nav .main-nav .nav-link {
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: #3F3F3F;
+    margin: 0px 5px;
+    display: inline-block;
+    transition: .5s all linear;
+    position: relative;
+}
+nav .main-nav .nav-link:hover {
+    color: var(--brand-color);
+}
+nav .main-nav .nav-link:hover::after {
+    content: "";
+    position: absolute;
+    left: 10%;
+    bottom: 0px;
+    width: 80%;
+    height: 3px;
+    background: var(--brand-color);
+}
+.log-in .nav-item .nav-link {
+    color: #fff;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    padding: 7px 25px;
+    border-radius: 40px;
+    margin-right: 15px;
+    display: inline-block;
+    background: #396C03;
+    border: 2px solid #396C03;
+}
+.log-in .nav-item .nav-link:hover {
+    color: #396C03;
+    border: 2px solid var(--brand-color);
+    background: #fff;
+}
+.log-in .nav-item:last-child {
+    color: #fff;
+    background: #396C03;
+    padding: 12px;
+    width: fit-content;
+    display: flex;
+    border-radius: 50%;
+}
+/* navbar end */
+/* banner start */
+.banner .hero-content-left{
+    margin: -100px auto 0px 60px;
+}
+.banner .hero-content-left h2{
+    color: #396C03;
+    font-size: 65px;
+    font-weight: 700;
+    font-family: 'Merienda', cursive;
+}
+.banner .hero-content-left p{
+    color: #676767;
+    font-size: 24px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
+.banner .log-in li input{
+    margin: -95px auto 0px 40px;
+    padding: 15px;
+    border-radius: 30px;
+    border: 2px solid #396C03;
+}
+.banner .log-in li:first-child {
+    padding: 15px 20px;
+    margin-left: 30px;
+}
+.banner .log-in .nav-item a {
+    color: #fff;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+    border: 2px solid #396C03;
+}
+.banner .log-in li:last-child{
+    background: #396C03;
+    width: fit-content;
+    display: flex;
+    border-radius: 35px;
+    margin-top: -73px;
+}
+.hero-content-right {
+    position: relative;
+}
+.hero-1 {
+    position: absolute;
+    top: 20px;
+}
+.hero-2 {
+    position: absolute;
+    top: 100px;
+    left: 40px;
+    z-index: 999;
+    max-width: 75%;
+}
+.hero-3 {
+    position: absolute;
+    top: -50px;
+    right: -45px;
+}
+/* banner end */
+
+/* content section start */
+.content-left h3{
+    color: var(--brand-color);
+    font-family: 'Merienda', cursive;
+}
+.content-left p{
+    color: #676767;
+    font-family: 'Poppins', sans-serif;
+}
+.content .log-in .nav-item a {
+    color: #fff;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+    border: 2px solid #396C03;
+}
+.content .log-in .nav-item:last-child {
+    color: #fff;
+    background: #396C03;
+    padding: 10px 20px;
+    display: flex;
+    border-radius: 40px;
+}
+.content .content-right{
+    background: url(../images/image-2.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.content .content-right .bike {
+    position: relative;
+    animation:forward 5s linear infinite;
+}
+@keyframes forward {
+    0%{transform: translateX(-30%);}
+    100%{transform: translateX(100%);}
+}
+/* content section end */
